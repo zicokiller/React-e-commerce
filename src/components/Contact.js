@@ -19,7 +19,7 @@ const Contact = () => {
               className="form-input"
               placeholder="entrez votre email"
             />
-          <button type="submit" className="submit-btn">envoyer</button>
+          <button type="submit" className="submit-btn">s'abonner</button>
           </form>
         </div>
       </div>
