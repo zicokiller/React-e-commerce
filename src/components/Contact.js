@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="content">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-            qui est iusto! Maiores dolorum laudantium odio, natus modi hic a.
+            qui est iusto! Maiores dolorum laudantium odio, natus modi hic am.
           </p>
           <form action="" className="contact-form">
             <input
