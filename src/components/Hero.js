@@ -17,7 +17,7 @@ const Hero = () => {
         sed quae amet.
       </p>
       <Link to="/products" className="btn hero-btn">
-        achetez maintenant
+        voir nos produits
       </Link>
     </article>
     <article className="img-container">
