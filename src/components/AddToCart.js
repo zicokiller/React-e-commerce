@@ -9,6 +9,15 @@ const AddToCart = ({ product }) => {
   const { id, stock, colors } = product;
 
   const [mainColor, setMainColor] = useState(colors[0]);
+  const [amount, setAmount] = useState(1);
+
+  const increase = () => {
+
+  };
+
+  const decrease = () => {
+
+  };
   return (
     <Wrapper>
       <div className="colors">
@@ -23,13 +32,15 @@ const AddToCart = ({ product }) => {
                 onClick={() => setMainColor(color)}
               >
                 {mainColor === color ? <FaCheck /> : null}
-                {index}
               </button>
             );
           })}
         </div>
       </div>
-      <div className="btn-container"></div>
+      <div className="btn-container">
+        <AmountButtons />
+        <Link to="/cart" className="btn">ajouter au panier</Link>
+      </div>
     </Wrapper>
   );
 };
@@ -76,7 +87,7 @@ const Wrapper = styled.section`
 
   .btn {
     margin-top: 1rem;
-    width: 140px;
+    width: 185px;
   }
 `;
 export default AddToCart;
