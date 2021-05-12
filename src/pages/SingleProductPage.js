@@ -47,7 +47,6 @@ const SingleProductPage = () => {
     name,
     price,
     description,
-    colors,
     stars,
     stock,
     reviews,
