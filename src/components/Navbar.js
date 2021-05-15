@@ -14,7 +14,7 @@ const Nav = () => {
   return <NavContainer><div className="nav-center">
     <div className="nav-header">
       <Link to="/">
-        <img src={logo} alt="comfy sloth"/>
+        <h5>-LARM e-commerce CMS-</h5>
       </Link>
       <button type="button" className="nav-toggle" onClick={openSidebar}>
         <FaBars />
@@ -57,7 +57,7 @@ const NavContainer = styled.nav`
   .nav-toggle {
     background: transparent;
     border: transparent;
-    color: var(--clr-primary-5);
+    color: var(--clr-larm-darkred);
     cursor: pointer;
     svg {
       font-size: 2rem;

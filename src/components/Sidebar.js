@@ -14,8 +14,9 @@ const Sidebar = () => {
     <SidebarContainer>
       <aside className={`${isSidebarOpen ? 'sidebar show-sidebar' : 'sidebar'}`}>
         <div className="sidebar-header">
-          <img src={logo} className="logo" alt="e-commerce-CMS"/>
-          <button className="close-btn" type="button" onClick={closeSidebar}>
+          {/*<img src={logo} className="logo" alt="e-commerce-CMS"/>*/}
+          <h5 style={{color: "var(--clr-larm-purple)"}}>-LARM e-commerce CMS-</h5>
+            <button className="close-btn" type="button" onClick={closeSidebar}>
             <FaTimes />
           </button>
         </div>

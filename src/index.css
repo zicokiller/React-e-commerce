@@ -5,6 +5,9 @@ Variables
 */
 
 :root {
+  /* LARM color palette */
+  --clr-larm-purple: #9677CF;
+  --clr-larm-darkred: #8B0000;
   /* dark shades of primary color*/
   --clr-primary-1: hsl(22, 28%, 21%);
   --clr-primary-2: hsl(22, 28%, 29%);
@@ -168,7 +171,7 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary-5);
+  background: var(--clr-larm-purple);
   color: var(--clr-primary-10);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
@@ -182,8 +185,8 @@ p {
   border-color: transparent;
 }
 .btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-7);
+  color: var(--clr-primary-10);
+  background: var(--clr-larm-darkred);
 }
 .title {
   text-align: center;
