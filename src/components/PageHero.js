@@ -7,7 +7,7 @@ const PageHero = ({ title, product }) => {
       <div className="section-center">
         <h3>
           <Link to="/">Accueil</Link>
-          {product && <Link to="/products">/Products</Link>}/{title}
+          {product && <Link to="/products">/Produits</Link>}/{title}
         </h3>
       </div>
     </Wrapper>
