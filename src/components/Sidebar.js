@@ -50,14 +50,14 @@ const SidebarContainer = styled.div`
     font-size: 2rem;
     background: transparent;
     border-color: transparent;
-    color: var(--clr-primary-5);
+    color: var(--clr-larm-darkred);
     transition: var(--transition);
     cursor: pointer;
-    color: var(--clr-red-dark);
+    color: var(--clr-larm-darkred);
     margin-top: 0.2rem;
   }
   .close-btn:hover {
-    color: var(--clr-red-light);
+    color: var(--clr-larm-purple);
   }
   .logo {
     justify-self: center;

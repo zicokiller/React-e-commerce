@@ -64,15 +64,15 @@ const Wrapper = styled.section`
     text-transform: capitalize;
   }
   .submit-btn {
-    background: var(--clr-primary-5);
+    background: var(--clr-larm-purple);
     text-transform: capitalize;
     letter-spacing: var(--spacing);
     cursor: pointer;
     transition: var(--transition);
-    color: var(--clr-black);
+    color: var(--clr-white);
   }
   .submit-btn:hover {
-    color: var(--clr-white);
+    color: var(--clr-larm-darkred);
   }
   @media (min-width: 992px) {
     .content {
