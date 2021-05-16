@@ -7,7 +7,12 @@ Variables
 :root {
   /* LARM color palette */
   --clr-larm-purple: #9677CF;
+  --clr-larm-purple1: #b693f8;
   --clr-larm-darkred: #8B0000;
+  --clr-larm-florawhite: #FFFAF0;
+  --clr-larm-whitesmoke: #F5F5F5;
+  --clr-larm-snow: #FFFAFA;
+  --clr-larm-ghostwhite: #F8F8FF;
   /* dark shades of primary color*/
   --clr-primary-1: hsl(22, 28%, 21%);
   --clr-primary-2: hsl(22, 28%, 29%);
