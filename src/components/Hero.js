@@ -8,13 +8,14 @@ const Hero = () => {
   return <Wrapper className="section-center">
     <article className="content">
       <h1>
-        Concevez votre<br />
-        zone de confort
+        Déployez votre boutique<br />
+        en ligne en 1 clic !
       </h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        At aut harum incidunt, magni corrupti consectetur in blanditiis 
-        sed quae amet.
+        LARM CMS est une solution "All in one" innovante. 
+        Créer et gérer une platforme web e-commerce
+        n'a jamais été aussi simple. Ci-contre, un modèle de boutique en ligne complètement
+        personnalisable.  
       </p>
       <Link to="/products" className="btn hero-btn">
         voir nos produits
