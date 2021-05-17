@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <Wrapper>
@@ -8,6 +10,15 @@ const Footer = () => {
       <span>Powered by LARM-</span>
       </h5>
       <h5>All rights reserved</h5>
+      <div className="social">
+        <span><FaGithub size={25} /></span>
+        <span><FaFacebook size={25} /></span>
+        <span><FaTwitter size={25} /></span>
+        <span><FaInstagram size={25} /></span>
+
+        
+        
+      </div>
     </Wrapper>
   )
 };
@@ -30,6 +41,20 @@ const Wrapper = styled.footer`
     font-weight: 400;
     text-transform: none;
     line-height: 1.25;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+    span {
+      display: grid;
+      margin: 0 auto;
+      place-items: center;
+      margin-left: 20px;
+      color: var(--clr-white);
+      cursor: pointer;
+    }
   }
   @media (min-width: 776px) {
     flex-direction: row;
