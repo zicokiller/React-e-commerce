@@ -9,12 +9,12 @@ const Footer = () => {
       <span> e-commerce CMS-</span>
       <span>Powered by LARM-</span>
       </h5>
-      <h5>All rights reserved</h5>
+      <h6>All rights reserved</h6>
       <div className="social">
-        <span><FaGithub size={25} /></span>
-        <span><FaFacebook size={25} /></span>
-        <span><FaTwitter size={25} /></span>
-        <span><FaInstagram size={25} /></span>
+        <span><FaGithub size={30} /></span>
+        <span><FaFacebook size={30} /></span>
+        <span><FaTwitter size={30} /></span>
+        <span><FaInstagram size={30} /></span>
 
         
         
@@ -46,18 +46,18 @@ const Wrapper = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 50px;
+    padding-top: 5px;
     span {
       display: grid;
       margin: 0 auto;
       place-items: center;
-      margin-left: 20px;
+      margin-left: 15px;
       color: var(--clr-white);
       cursor: pointer;
     }
   }
   @media (min-width: 776px) {
-    flex-direction: row;
+    flex-direction: column;
   }
 `;
 
