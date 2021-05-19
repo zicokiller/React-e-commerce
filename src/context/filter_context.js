@@ -73,10 +73,15 @@ export const FilterProvider = ({ children }) => {
     if (name === "price") {
       value = parseFloat(value);
     }
+    if (name === "shipping") {
+      value = e.target.checked;
+    }
     dispatch({ type: UPDATE_FILTERS, payload: { name, value } });
   };
 
-  const clearFilters = (e) => {};
+  const clearFilters = () => {
+    dispatch({type: CLEAR_FILTERS});
+  };
 
   return (
     <FilterContext.Provider
