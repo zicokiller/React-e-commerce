@@ -101,6 +101,7 @@ const Wrapper = styled.section`
   }
 
   .sort-input {
+    background: none;
     border-color: transparent;
     outline: none;
     font-size: 1rem;

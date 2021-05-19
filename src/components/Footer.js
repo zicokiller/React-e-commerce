@@ -37,7 +37,6 @@ const Wrapper = styled.footer`
   h5 {
     color: var(--clr-white);
     margin: 0.1rem;
-
     font-weight: 400;
     text-transform: none;
     line-height: 1.25;

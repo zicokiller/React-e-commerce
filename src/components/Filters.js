@@ -43,7 +43,7 @@ const Filters = () => {
           {/* end search input */}
           {/* categories */}
           <div className="form-control">
-            <h5>Categorie</h5>
+            <h5>Catégorie</h5>
             <div>
               {categories.map((c, index) => {
                 return (
@@ -73,14 +73,67 @@ const Filters = () => {
               className="company"
             >
               {companies.map((c, index) => {
-                return <option key={index} value={c}>
-                  {c}
-                </option>
-      
+                return (
+                  <option key={index} value={c}>
+                    {c}
+                  </option>
+                );
               })}
             </select>
           </div>
           {/* end of companies */}
+          {/* colors */}
+          <div className="form-control">
+            <h5>Couleurs</h5>
+            <div className="colors">
+              {colors.map((c, index) => {
+                if (c === "all") {
+                  return (
+                    <button
+                      key={index}
+                      name="color"
+                      onClick={updateFilters}
+                      data-color="all"
+                      className={`${
+                        color === "all" ? "all-btn active" : "all-btn"
+                      }`}
+                    >
+                      all
+                    </button>
+                  );
+                }
+                return (
+                  <button
+                    key={index}
+                    name="color"
+                    style={{ background: c }}
+                    className={`${
+                      color === c ? "color-btn active" : "color-btn"
+                    }`}
+                    data-color={c}
+                    onClick={updateFilters}
+                  >
+                    {color === c ? <FaCheck /> : null}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          {/* end of colors */}
+          {/* price */}
+          <div className="form-control">
+            <h5>Prix</h5>
+            <p className="price">{formatPrice(price)}</p>
+            <input
+              type="range"
+              name="price"
+              onChange={updateFilters}
+              min={min_price}
+              max={max_price}
+              value={price}
+            />
+          </div>
+          {/* end of price */}
         </form>
       </div>
     </Wrapper>
