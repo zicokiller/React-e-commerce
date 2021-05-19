@@ -57,20 +57,29 @@ const filter_reducer = (state, action) => {
   }
 
   if (action.type === FILTER_PRODUCTS) {
-    console.log('filtering_products');
-    return {...state};
+    const { all_products } = state;
+    const { text, category, company, color, price, shipping } = state.filters;
+    let tempProducts = [...all_products];
+    // filtering
+    if (text) {
+      tempProducts = tempProducts.filter((product) => {
+        return product.name.toLowerCase().startsWith(text);
+      })
+    }
+    return { ...state, filtered_products: tempProducts };
   }
   if (action.type === CLEAR_FILTERS) {
-    return {...state,
+    return {
+      ...state,
       filters: {
-    ...state.filters,  
-    text: "",
-    company: "all",
-    category: "all",
-    price: state.filters.max_price,
-    shipping: false,
-    },
-   }
+        ...state.filters,
+        text: "",
+        company: "all",
+        category: "all",
+        price: state.filters.max_price,
+        shipping: false,
+      },
+    };
   }
 
   return state;
