@@ -60,11 +60,38 @@ const filter_reducer = (state, action) => {
     const { all_products } = state;
     const { text, category, company, color, price, shipping } = state.filters;
     let tempProducts = [...all_products];
-    // filtering
+    // filtrages des produits
+    // texte
     if (text) {
       tempProducts = tempProducts.filter((product) => {
         return product.name.toLowerCase().startsWith(text);
-      })
+      });
+    }
+    // categorie
+    if (category !== "all") {
+      tempProducts = tempProducts.filter(
+        (product) => product.category === category
+      );
+    }
+    // enseigne
+    if (company !== "all") {
+      tempProducts = tempProducts.filter(
+        (product) => product.company === company
+      );
+    }
+    // couleurs
+    if (color !== "all") {
+      tempProducts = tempProducts.filter((product) => {
+        return product.colors.find((c) => c === color);
+      });
+    }
+    // prix
+    tempProducts = tempProducts.filter((product) => product.price <= price);
+    // livraison
+    if (shipping) {
+      tempProducts = tempProducts.filter(
+        (product) => product.shipping === true
+      );
     }
     return { ...state, filtered_products: tempProducts };
   }
@@ -76,6 +103,7 @@ const filter_reducer = (state, action) => {
         text: "",
         company: "all",
         category: "all",
+        color: "all",
         price: state.filters.max_price,
         shipping: false,
       },
