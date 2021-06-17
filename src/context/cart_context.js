@@ -15,7 +15,7 @@ const getLocalStorage = () => {
   } else {
     return [];
   }
-}
+};
 
 const initialState = {
   cart: getLocalStorage(),
